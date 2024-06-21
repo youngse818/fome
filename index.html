@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOME</title>
+    <link rel="icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index-media.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/index-JQ.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="clearfix">
+            <h1><a href="index.html"><img src="./img/logo.png" alt="로고이미지"></a></h1>
+            <div class="n_btn"></div>
+            <nav>
+                <ul>
+                    <li class="nav_li1" onclick="NAV1()">
+                        <span>제품소개</span>
+                    </li>
+                    <!-- <li class="nav_li2" onclick="NAV2()">
+                        <span>프로모션</span>
+                    </li> -->
+                    <li class="nav_li3" onclick="NAV3()">
+                        <span>프리미엄</span>
+                    </li>
+                    <li class="nav_li4">
+                        <span>
+                            KR
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                        <ul>
+                            <li>KR</li>
+                            <li>EN</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="x_bar"></div>
+            </nav>
+        </header>
+
+        <section class="sec sec01">
+            <div class="vidi">
+                <div class="vidi_bg"></div>
+                <video src="https://media.insta360.com/static/d92a13f31628e2addf511d90687e7527/ACE-PC.1080p-crf23.mp4" autoplay muted loop></video>
+            </div>
+            <div class="text text1">
+                <span class="in_txt1">일상에</span>
+                <span class="in_txt3">더하다.</span>
+            </div>
+            <div class="text text2">
+                <p class="bar"></p>
+                <span class="show1">즐거움을</span>
+                <span class="show2">에너지를</span>
+                <span class="show3">설레임을</span>
+            </div>
+            <div class="scroll">
+                <span>scroll</span>
+            </div>
+        </section>
+
+        <!-- <section class="sec sec02">
+            <div class="bg">
+                <div class="pencil">
+                    <div class="text">
+                        <p class="p1">기록하고</p>
+                        <p class="p2">증명하고</p>
+                        <p class="p3">성장하기</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+
+        <!-- <section class="sec sec03">
+            <div class="sub_bg clearfix">
+                <p class="p1"></p>
+                <p class="p2"></p>
+            </div>
+            <div class="product">
+                <ul>
+                    <li class="li1"><img src="./img/product1.png" alt="제품1"></li>
+                    <li class="li2"><img src="./img/product2.png" alt="제품2"></li>
+                    <li class="li3"><img src="./img/product3.png" alt="제품3"></li>
+                </ul>
+            </div>
+        </section> -->
+
+        <main class="sec sec04">
+            <div class="hey">
+                <div class="textBB_box">
+                    <p class="p1">누구든</p>
+                    <p class="p2">무엇이든</p>
+                    <p class="p3">가치를 더하다.</p>
+                </div>
+                <div class="box_wrap">
+                    <div class="text_box">
+                        <p class="p1">누구든</p>
+                        <p class="p2">무엇이든</p>
+                        <p class="p3">가치를 더하다</p>
+                    </div>
+                    <div class="pro_box box1">
+                        <figure>
+                            <img src="./img/product1.png" alt="Fome 360 GO3">
+                        </figure>
+                        <figcaption>
+                            <h2>Fome360 GO3</h2>
+                            <p>내 손 안, 만능 액션캠</p>
+                        </figcaption>
+                    </div><!--//.box1-->
+
+                    <div class="pro_box box2">
+                        <figure>
+                            <img src="./img/product2.png" alt="Fome 360 X4">
+                        </figure>
+                        <figcaption>
+                            <h2>Fome360 X4</h2>
+                            <p>8K 게임 체인저</p>
+                        </figcaption>
+                    </div><!--//.box2-->
+
+                    <div class="pro_box box3">
+                        <figure>
+                            <img src="./img/product3.png" alt="Fome 360 Flow">
+                        </figure>
+                        <figcaption>
+                            <h2>Fome360 Flow</h2>
+                            <p>AI 트래킹 짐벌</p>
+                        </figcaption>
+                    </div><!--//.box3-->
+
+                    <div class="pro_box box4">
+                        <figure>
+                            <img src="./img/product4.png" alt="거치대">
+                        </figure>
+                        <figcaption>
+                            <h2>Fome 무선 충전기</h2>
+                            <p>특허 받은 All-IN1 충전기</p>
+                        </figcaption>
+                    </div><!--//.box4-->
+
+                    <div class="pro_box box5">
+                        <figure>
+                            <img src="./img/product5.png" alt="휴대용 충전기">
+                        </figure>
+                        <figcaption>
+                            <h2>Fome 휴대용 충전기</h2>
+                            <p>특허 받은 자석타입 충전기</p>
+                        </figcaption>
+                    </div><!--//.box5-->
+                    <div class="close">
+                        <figure>
+                            <img src="./img/logo.png" alt="로고 이미지" class="logo">
+                        </figure>
+                    </div>
+                </div><!--//.box_wrap-->
+
+                <div class="count_box">
+                    <div class="time clearfix">
+                        <figure><img src="./img/product4-2.png" alt="거치대"></figure>
+                        <figcaption>
+                            <p><span>3,</span><span class="countA">101</span>시간</p>
+                            <div class="text">
+                                <p class="p1">상상이 현실이 되기까지의 시간</p>
+                                <p class="p2">모든 것은 때가 있다.</p>
+                                <p class="p3">불가능한 것을 상상하라</p>
+                            </div><!--//.text-->
+                        </figcaption>
+                    </div><!--//.time-->
+                    <div class="person clearfix">
+                        <figure><img src="./img/product2-2.png" alt="Fome 360 X4"></figure>
+                        <figcaption>
+                            <p><span>2,736,</span><span class="countB">291</span>명</p>
+                            <div class="text">
+                                <p class="p1">우리와 함께한 사람들</p>
+                                <p class="p2">Fome로 더 스마트하게</p>
+                                <p class="p3">창의력에 날개를 달다.</p>
+                            </div><!--//.text-->
+                        </figcaption>
+                    </div><!--//.person-->
+                </div><!--//.count_box-->
+            </div>
+
+            <div class="slider">
+                <div class="swiper event">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                            <figure><img src="./img/event1.png" alt="이벤트1"></figure>
+                            <figcaption>
+                                <strong>Think Bold Project</strong>
+                                <p>가장 대담한 아이디어를 제출하고 최대 $100,000의 상금을 받아 가세요!</p>
+                            </figcaption>
+                        </div><!--//.slide1-->
+
+                        <div class="swiper-slide slide2">
+                            <figure><img src="./img/event2.png" alt="이벤트2"></figure>
+                            <figcaption>
+                                <strong>Challenge to Sports</strong>
+                                <p>사이클, 트래킹, 프리 다이빙 등 다양한 액티브 스포츠와 함께 해요! </p>
+                            </figcaption>
+                        </div><!--//.slide2-->
+
+                        <div class="swiper-slide slide3">
+                            <figure><img src="./img/event3.png  " alt="이벤트3"></figure>
+                            <figcaption>
+                                <strong>Fome Awards AI 워프 콘테스트</strong>
+                                <p>최고의 AI 워프 영상을 제출하고 $2,000 상금을 획득하세요!</p>
+                            </figcaption>
+                        </div><!--//.slide3-->
+
+                        <div class="swiper-slide slide4">
+                            <figure><img src="./img/event4.png" alt="이벤트4"></figure>
+                            <figcaption>
+                                <strong>2024 Trip in Korea</strong>
+                                <p>한국의 숨은 명소를 찾아 여행하고, 항공 티켓 받아 가자!</p>
+                            </figcaption>
+                        </div><!--//.slide4-->
+                    </div>
+                    <div class="swiper-button-next arrow"></div>
+                    <div class="swiper-button-prev arrow"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div><!--//.slide-->
+
+            <div class="sale">
+                <p class="imgg"></p>
+                <div class="text">
+                    <strong>보상 판매!</strong>
+                    <p>기존 카메라는 반납 후 할인 받고, <span>New Version으로 업그레이드 해보세요</span></p>
+                    <div id="modalA_btn" class="sale_vidi">
+                        <p>소개 영상 더보기▶</p>
+                        <span></span>
+                    </div><!--//.sale_vidi-->
+                    <div id="modalB_btn" class="sale_vidi">
+                        <p>하이라이트 보기▶</p>
+                        <span></span>
+                    </div><!--//.sale_vidi-->
+
+                </div><!--//.text-->
+            </div><!--//.sale-->
+
+            <div class="with">
+                <ul class="clearfix">
+                    <li class="li1">with</li>
+                    <li class="li2">for</li>
+                    <li class="li3">me</li>
+                </ul>
+            </div>
+        </main>
+
+        <div id="modal">
+            <article id="modalA_wrap" class="modal_wrap">
+                <div class="modal_popup">
+                    <iframe width="100%" height="100%"
+                        src="https://www.youtube.com/embed/6FbuQnuRiMc?si=x9AOl42cGkhHKYwv&amp;start=62&version=3&vq=hd1080" frameborder="0" border="0" allow-scripts allowfullscreen id="modalA_video"></iframe>
+                </div>
+            </article><!--//.modalA_wrap-->
+
+            <article id="modalB_wrap" class="modal_wrap">
+                <div class="modal_popup">
+                    <iframe width="100%" height="100%"
+                        src="https://www.youtube.com/embed/gfGdhp0Rqm8?version=3&vq=hd1080" border="0" allow-scripts frameborder="0" allowfullscreen id="modalB_video"></iframe>
+                </div>
+            </article><!--//.modalB_wrap-->
+        </div>
+
+        <div class="bg_img">
+            <p></p>
+        </div>
+
+        <section class="sec05">
+            <div class="acc clearfix">
+                <article class="acc_L">
+                    <figure>
+                        <p></p>
+                    </figure>
+                    <figcaption><span>Make me more</span> <span>like myself</span></figcaption>
+                </article><!--//.ac_L-->
+                <article class="acc_R">
+                    <ul class="clearfix">
+                        <li class="li1">
+                            <figure>
+                                <p></p>
+                            </figure>
+                            <figcaption>모듈</figcaption>
+                        </li>
+                        <li class="li2">
+                            <figure>
+                                <p></p>
+                            </figure>
+                            <figcaption>거치대</figcaption>
+                        </li>
+                        <li class="li3">
+                            <figure>
+                                <p></p>
+                            </figure>
+                            <figcaption>케이스</figcaption>
+                        </li>
+                    </ul>
+                </article><!--//.ac_R-->
+            </div>
+        </section>
+
+        <section class="sec06 clearfix">
+            <div class="left">
+                <h2>FOME Premium 안내</h2>
+                <ul>
+                    <li class="li1"><span></span>FOME 전용 동영상 편집 프로그램 제공</li>
+                    <li class="li2">자동으로 하이라이트 동영상 생성</li>
+                    <li class="li3">충전 시 자동으로 영상 업로드</li>
+                    <li class="li4">HD 화질로 클라우드 자동 백업</li>
+                    <li class="li5">손상된 카메라 교체 1회</li>
+                    <li class="li6">다음 version 구매 시 $100 할인</li>
+                </ul>
+                <a href="#none">가입하기</a>
+                <span>결제 후 Premium 서비스는 선물할 수 있습니다.</span>
+            </div><!--//.left-->
+            <div class="right">
+                <p></p>
+            </div><!--//.right-->
+        </section>
+
+        <footer class="footer">
+            <div class="mailform">
+                <p>FOME의 최신 소식과 단독 혜택을 누려보세요!</p>
+                <div class="txt">
+                    <p>구독하기</p>
+                    <form action="">
+                        <input type="text" id="Eamil" placeholder="메일 주소를 입력하세요" required autocomplete="off"
+                            name="email">
+                        <button class="email_btn" onclick="email_BTN()" type="button"><i
+                                class="fa-solid fa-chevron-right"></i></button>
+                    </form>
+                    <span>구독 시, FOME의 <a href="#none">개인정보 보호정책</a> 및 <a href="#none">이용약관</a>에 동의하게 됩니다.</span>
+                </div><!--//.txt-->
+                <span class="innertxt"></span>
+            </div><!--//.mailform-->
+
+            <div class="f_menu">
+                <div class="ul_box1">
+                    <ul>
+                        <li class="toggle_btn">
+                            <p>FOME</p>
+                            <span class="icon">
+                                <i class="fa-solid fa-plus" aria-expanded="flase"></i>
+                            </span>
+                            <ul class="sub_ul" aria-hidden="false">
+                                <li>브랜드 스토리</li>
+                                <li>인재 모집</li>
+                                <li>수상내역</li>
+                                <li>커뮤니티</li>
+                                <li>youtube</li>
+                                <li>Instagram</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!--//.ul_box1-->
+
+                <div class="ul_box2">
+                    <ul>
+                        <li class="toggle_btn">
+                            <p>Partner</p>
+                            <span class="icon">
+                                <i class="fa-solid fa-plus" aria-expanded="false"></i>
+                            </span>
+                            <ul class="sub_ul" aria-hidden="false">
+                                <li>Contact Us</li>
+                                <li>제휴사 문의</li>
+                                <li>리셀러 문의</li>
+                                <li>온라인 스토어</li>
+                                <li>오프라인 스토어</li>
+                                <li class="hide">hide</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!--//.ul_box2-->
+
+                <div class="ul_box3">
+                    <ul>
+                        <li class="toggle_btn">
+                            <p>Support</p>
+                            <span class="icon""fa-solid fa-plus">
+                                <i class="fa-solid fa-plus" aria-expanded="false"></i>
+                            </span>
+                            <ul class="sub_ul" aria-hidden="false">
+                                <li>A/S 정책</li>
+                                <li>A/S 신청</li>
+                                <li>주문 확인</li>
+                                <li>소프트웨어 업데이트</li>
+                                <li>보증 연장 서비스</li>
+                                <li class="hide">hide</li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </div><!--//.ul_box3-->
+
+                <div class="ul_box4">
+                    <ul>
+                        <li class="toggle_btn">
+                            <p>News</p>
+                            <span class="icon">
+                                <i class="fa-solid fa-plus" aria-expanded="false"></i>
+                            </span>
+                            <ul class="sub_ul" aria-hidden="false">
+                                <li>최신 소식</li>
+                                <li>프로모션</li>
+                                <li>학생 할인</li>
+                                <li>제휴 프로그램</li>
+                                <li class="hide">hide</li>
+                                <li class="hide">hide</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!--//.ul_box4-->
+            </div><!--//.f_menu-->
+
+            <div class="brand">
+                <p>이메일 : oooook874@naver.com</p>
+            </div>
+
+            <div class="f_aa">
+                <ul class="clearfix">
+                    <li>FOME 앱 다운로드</li>
+                    <li>서비스 이용약관</li>
+                    <li>개인정보 보호정책</li>
+                    <li>쿠키 정책</li>
+                    <li>쿠키 설정</li>
+                </ul>
+                <em>© 2024 FOME Inc. All rights reserved.</em>
+            </div>
+            <p class="pofol">* 본 사이트는 포트폴리오 목적으로 제작되었으며, 상업적으로 사용되지 않았습니다.</p>
+        </footer>
+        <div id="top_btn">
+            <span><i class="fa-solid fa-arrow-up-long"></i></span>
+        </div>
+    </div>
+
+    <script>
+        window.onresize = function(event){
+            location.reload(true);
+        }
+        
+        //nav
+        const H4_BTN = document.querySelector('header nav > ul > li.nav_li4 span')
+        const H4_arrow = document.querySelector('header nav > ul > li.nav_li4 i')
+        const H4_sub = document.querySelector('header nav > ul > li.nav_li4 > ul')
+
+        let winW = window.innerWidth
+        // console.log(winW)
+        if(winW > 1025){
+            H4_BTN.addEventListener('click', function(){
+                H4_arrow.classList.toggle('active')
+                H4_sub.classList.toggle('on')
+            })  
+        }else if(winW <= 1024){
+            const NAV_BTN = document.querySelector('.n_btn')
+            const NAV = document.querySelector('header nav')
+
+            NAV_BTN.addEventListener('click', function(){
+                NAV.classList.add('open')
+            })
+  
+            const X_bar = document.querySelector('header nav .x_bar')
+            X_bar.addEventListener('click', function(){
+                NAV.classList.remove('open')
+            })
+
+            H4_BTN.addEventListener('click', function(){
+                H4_arrow.classList.toggle('add')
+                H4_sub.classList.toggle('show')
+            }) 
+        }
+
+        //nav_li1   a태그가 아닌 높이 값으로 구현하기
+        function NAV1() {
+            const nav001 = document.querySelector('.nav_li1')
+            const nav001_cont = window.pageYOffset + document.querySelector(".sec01").getBoundingClientRect().bottom;
+
+            nav001.addEventListener('click', function () {
+                window.scrollTo({ top: nav001_cont, behavior: 'smooth' })
+                return false;
+            })
+        }
+
+        //nav_li3   a태그가 아닌 높이 값으로 구현하기
+        function NAV3() {
+            const nav003 = document.querySelector('.nav_li3')
+            const nav003_cont = window.pageYOffset + document.querySelector(".sec06").getBoundingClientRect().top;
+
+            nav003.addEventListener('click', function () {
+                window.scrollTo({ top: nav003_cont, behavior: 'smooth' })
+                return false;
+            })
+        }
+
+   
+       
+
+
+
+        //제품소개 카운터
+        let NumA = 101; //
+        let NumB = 291; //
+        const countUP_A = (anything) => anything.innerText = ++NumA
+        const countUP_B = (anything) => anything.innerText = ++NumB
+        const SetInterval = (a, b) => setInterval(() => {
+            if (NumA <= 0) return clearInterval(SetInterval);
+            a();
+        }, b);
+
+        const Sec = 1500;
+        const countA = document.querySelector(".countA");
+        const countB = document.querySelector(".countB");
+        // countA.innerText = 0; // 0으로 초기값 설정.
+
+        // 이 함수 실행시 Num = 1 안됨 => 계속해서 1로 고정함 => 콜백 함수 내서 외부 변수 부르기
+        SetInterval(countUP_A.bind(null, countA), Sec);
+        SetInterval(countUP_B.bind(null, countB), Sec);
+
+
+        //소개영상 모달A
+        const modalA_BTN = document.getElementById('modalA_btn')
+        const modalA = document.getElementById('modalA_wrap')
+        const modalA_video = document.getElementById('modalA_video')
+
+        modalA_BTN.addEventListener('click', function () {
+            modalA.style.display = 'block';
+            modalA_video.src = modalA_video.src += "&autoplay=1&controls=1&mute=1";
+            document.querySelector('body').style.overflow = 'hidden'
+
+        })
+        modalA.addEventListener('click', function () {
+            modalA.style.display = 'none';
+            modalA_video.src = modalA_video.src += "&mute=0";
+            document.querySelector('body').style.overflow = 'auto'
+        })
+
+        //소개영상 모달B
+        const modalB_BTN = document.getElementById('modalB_btn')
+        const modalB = document.getElementById('modalB_wrap')
+        const modalB_video = document.getElementById('modalB_video')
+
+        modalB_BTN.addEventListener('click', function () {
+            modalB.style.display = 'block';
+            modalB_video.src = modalB_video.src += "&autoplay=1&controls=1&mute=1";
+            document.querySelector('body').style.overflow = 'hidden'
+        })
+        modalB.addEventListener('click', function () {
+            modalB.style.display = 'none';
+            modalB_video.src = modalB_video.src += "&mute=0";
+            document.querySelector('body').style.overflow = 'auto'
+        })
+
+    
+        //이메일 : 유효성 체크
+        function email_check() {
+            let Email = document.getElementById('Eamil').value;
+            let IN_TXT = document.querySelector('.innertxt');
+
+            IN_TXT.innerText = '';
+
+            let email_check = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+            if (email_check.test(Email)) {
+                IN_TXT.innerHTML = '구독이 완료 되었습니다. 감사합니다.';
+                IN_TXT.style.color = 'var(--bg2)';
+            } else {
+                IN_TXT.innerText = '유효하지 않은 이메일 형식입니다. 다시 입력해 주세요';
+                IN_TXT.style.color = 'red';
+            }
+            return false;
+        }
+        function email_BTN() {
+            email_check();
+        }
+
+
+        //f_menu 아코디언!!!!!!!!!!!!!!!!!!!!!!
+        const tog_BTN = document.querySelectorAll('.toggle_btn');
+        const tog_CONT = document.querySelectorAll('.sub_ul');
+        const Plus = document.querySelectorAll('.icon i');
+
+        function acodian() {
+            const tog__contON = this.querySelector('.sub_ul');
+            const contGET = this.querySelector('.sub_ul').getAttribute("aria-hidden");
+            // //이 방법도 됨
+            // for(let i of tog_CONT){
+            //     // console.log(i)
+            //     i.setAttribute('aria-hidden', 'flase');
+            // }
+
+            for (let i = 0; i < tog_CONT.length; i++) {
+                tog_CONT[i].setAttribute('aria-hidden', 'flase');
+            };
+            if(contGET == 'flase'){
+                tog__contON.setAttribute('aria-hidden', 'true');
+            }
+            let cont_check = contGET == 'true';
+
+            const Plus__ON = this.querySelector('.icon i');
+            const Plus__GET = this.querySelector('.icon i').getAttribute("aria-expanded");
+            for (let j = 0; j < Plus.length; j++) {
+                Plus[j].setAttribute('aria-expanded', 'flase');
+            };
+            if(tog__contON.getAttribute("aria-hidden", 'true')){
+                Plus__ON.setAttribute('aria-expanded', 'true');
+            }
+            let Plue_check = Plus__GET == 'true';
+            if(Plue_check){
+                Plus__ON.setAttribute('aria-expanded', 'flase');
+            }
+        }
+        tog_BTN.forEach((el) => {
+            el.addEventListener('click', acodian)
+        })
+
+
+        // top_btn : 자바스크립트
+        const top_BTN = document.getElementById('top_btn')
+        top_BTN.style.display = 'none';
+        top_BTN.addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+            return false;
+        })
+
+        window.addEventListener('scroll', () => {
+            const BTN_show = window.pageYOffset + document.querySelector(".sec04 .count_box .person").getBoundingClientRect().top;
+            let nowS = this.scrollY // 현재 스크롤 탑 값
+            // console.log(BTN_show);
+            if (nowS >= BTN_show) {
+                top_BTN.style.display = 'block';
+            } else {
+                top_BTN.style.display = 'none';
+            }
+        })
+    </script>
+
+</html>

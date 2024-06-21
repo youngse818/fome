@@ -1,0 +1,52 @@
+@charset "utf-8";
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+/* 영어 */
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+li{list-style:  none;}
+a{text-decoration: none; color: var(--bg);}
+img{display: block;}
+
+.clearfix::before, .clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+body{font-family: 'Pretendard'}
+
+
+/* 스크롤 설정 */
+/* html::-webkit-scrollbar {width: 10px;} */
+/* html::-webkit-scrollbar-thumb {background-color: red; border-radius: 3px;} */
+
+
+:root{
+    font-synthesis: none; /* bold, italic을 못 쓰게 막아놓는 것을 해제하는 명령어 - 브라우저 속성 값에 따라 다름 */
+    -webkit-font-smoothing : antialiased; /* 최적화 */
+    -webkit-text-size-adjust : 100%; /* 아이폰 가로 모드에서 글씨 확대 금지 */
+
+
+    --black : #000;
+    --bg : rgba(0,0,0,0.7);
+    --bg2 : rgba(0,0,0,0.5);
+    --sub_bg : rgba(0,0,0,0.3);
+    --wh: #fff;
+    --m_text : rgba(255,255,255,0.8);
+    --subW : rgba(255,255,255,0.5);
+    --my-red: #e657af; /* rgba(230,87,175) */
+    --my-green: #43cf2e; /* rgba(67,207,46) */
+    --my-blue: #0049ff; /* rgba(0,73,255) */
+    --gray : #e7e9eb
+}
