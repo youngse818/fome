@@ -274,13 +274,6 @@
        position: relative; 
        cursor: pointer;
     }
-    /* header .n_btn::before{
-        content: '\f0c9';
-        font: var(--fa-font-solid);
-        font-size: 40px; color:var(--wh); text-shadow: 0px 0px 3px var(--my-blue);
-        display: block; text-align: center;
-    }
-    header .n_btn:hover::before{content: '\f550';} */
     header .n_btn::before{
         content: '\f0c9';
         font: var(--fa-font-solid);/*ver6*/
@@ -323,7 +316,6 @@
         content: "";
         width: 30px; height: 25px; border-radius: 2px;
         position: absolute; right: 5px; top: 0px;
-        opacity: .8;
     }
     header nav > ul > li.nav_li4 > ul > li:nth-of-type(1)::after{
         background: url(../img/flag-KO\(32x24\).png) no-repeat;
@@ -513,12 +505,16 @@
 }
 
 @media(max-width:720px){
-    /* header h1{width: 170px; height: 90px; margin-left: 20px;}
-    header nav > ul > li{width: 100px; height: 90px;}
-    header nav > ul > li span{font-size: 17px;}
-    header nav > ul > li.nav_li4 i{margin-left: 6px;}
-    header nav > ul > li.nav_li4 > ul > li{font-size: 0.9em; margin-bottom: 12px;}
-    header nav > ul > li.nav_li4 > ul > li::after{width: 26px; height: 20px; border-radius: 0px; right: -14px; top: 0px;} */
+    header h1{width: 170px; height: 90px; margin-left: 20px;}
+    header .n_btn{width: 40px; height: 40px; margin: 30px 30px 0 0;}
+    header .n_btn::before, header .n_btn::after{font-size: 35px;}
+    header nav > ul > li span{font-size: 20px;}
+    header nav > ul > li.nav_li3{margin: 17% 0;}
+    header nav > ul > li.nav_li4 > ul > li{margin-top: 20px; font-size: 16px;}
+    header nav > ul > li.nav_li4 > ul > li::after{width: 25px; height: 20px; right: 7px; top: 0px;}
+    header nav .x_bar{width: 40px; height: 40px; right: 20px; top: 30px;}
+    header nav .x_bar::before{font-size: 35px;}
+    header nav .x_bar:hover{transform: scale(1.05);}
 
     .sec01 .text{font-size: 38px; left: 18%; top:80%;}
 
@@ -625,6 +621,9 @@
 }
 
 @media(max-width:535px){
+    header .n_btn::before, header .n_btn::after{font-size: 30px;}
+    header nav .x_bar::before{font-size: 30px;}
+
     .sec01 .text{font-size: 38px; left: 25%; top:80%;}
 
     .sec04 .textBB_box > p{font-size: 30px; margin: 1.5% 0;}
