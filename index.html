@@ -55,7 +55,8 @@
         <section class="sec sec01">
             <div class="vidi">
                 <div class="vidi_bg"></div>
-                <video src="https://media.insta360.com/static/d92a13f31628e2addf511d90687e7527/ACE-PC.1080p-crf23.mp4" autoplay muted loop></video>
+                <video src="https://media.insta360.com/static/d92a13f31628e2addf511d90687e7527/ACE-PC.1080p-crf23.mp4"
+                    autoplay muted loop></video>
             </div>
             <div class="text text1">
                 <span class="in_txt1">일상에</span>
@@ -266,14 +267,16 @@
             <article id="modalA_wrap" class="modal_wrap">
                 <div class="modal_popup">
                     <iframe width="100%" height="100%"
-                        src="https://www.youtube.com/embed/6FbuQnuRiMc?si=x9AOl42cGkhHKYwv&amp;start=62&version=3&vq=hd1080" frameborder="0" border="0" allow-scripts allowfullscreen id="modalA_video"></iframe>
+                        src="https://www.youtube.com/embed/6FbuQnuRiMc?si=x9AOl42cGkhHKYwv&amp;start=62&version=3&vq=hd1080"
+                        frameborder="0" border="0" allow-scripts allowfullscreen id="modalA_video"></iframe>
                 </div>
             </article><!--//.modalA_wrap-->
 
             <article id="modalB_wrap" class="modal_wrap">
                 <div class="modal_popup">
                     <iframe width="100%" height="100%"
-                        src="https://www.youtube.com/embed/gfGdhp0Rqm8?version=3&vq=hd1080" border="0" allow-scripts frameborder="0" allowfullscreen id="modalB_video"></iframe>
+                        src="https://www.youtube.com/embed/gfGdhp0Rqm8?version=3&vq=hd1080" border="0" allow-scripts
+                        frameborder="0" allowfullscreen id="modalB_video"></iframe>
                 </div>
             </article><!--//.modalB_wrap-->
         </div>
@@ -405,7 +408,7 @@
                                 <li class="hide">hide</li>
                             </ul>
                         </li>
-                        
+
                     </ul>
                 </div><!--//.ul_box3-->
 
@@ -451,36 +454,73 @@
     </div>
 
     <script>
-        //nav
-        const H4_BTN = document.querySelector('header nav > ul > li.nav_li4 span')
-        const H4_arrow = document.querySelector('header nav > ul > li.nav_li4 i')
-        const H4_sub = document.querySelector('header nav > ul > li.nav_li4 > ul')
+        Nav()
+        function Nav(){
+            const H4_BTN = document.querySelector('header nav > ul > li.nav_li4 span')
+            const H4_arrow = document.querySelector('header nav > ul > li.nav_li4 i')
+            const H4_sub = document.querySelector('header nav > ul > li.nav_li4 > ul')
 
-        let winW = window.innerWidth
-        // console.log(winW)
-        if(winW > 1025){
-            H4_BTN.addEventListener('click', function(){
-                H4_arrow.classList.toggle('active')
-                H4_sub.classList.toggle('on')
-            })  
-        }else if(winW <= 1024){
-            const NAV_BTN = document.querySelector('.n_btn')
-            const NAV = document.querySelector('header nav')
+            let winW = window.innerWidth
+            // console.log(winW)
+            if(winW > 1025){
+                H4_BTN.addEventListener('click', function(){
+                    H4_arrow.classList.toggle('active')
+                    H4_sub.classList.toggle('on')
+                })  
+            }else if(winW <= 1024){
+                const NAV_BTN = document.querySelector('.n_btn')
+                const NAV = document.querySelector('header nav')
 
-            NAV_BTN.addEventListener('click', function(){
-                NAV.classList.add('open')
-            })
-  
-            const X_bar = document.querySelector('header nav .x_bar')
-            X_bar.addEventListener('click', function(){
-                NAV.classList.remove('open')
-            })
+                NAV_BTN.addEventListener('click', function(){
+                    NAV.classList.add('open')
+                })
 
-            H4_BTN.addEventListener('click', function(){
-                H4_arrow.classList.toggle('add')
-                H4_sub.classList.toggle('show')
-            }) 
+                const X_bar = document.querySelector('header nav .x_bar')
+                X_bar.addEventListener('click', function(){
+                    NAV.classList.remove('open')
+                })
+
+                H4_BTN.addEventListener('click', function(){
+                    H4_arrow.classList.toggle('add')
+                    H4_sub.classList.toggle('show')
+                }) 
+            }
         }
+        window.onresize = function(){
+            // winW = window.innerWidth
+            // console.log(winW)
+            Nav()
+        }
+
+      
+
+        // let winW = window.innerWidth
+        // // console.log(winW)
+        // if(winW > 1025){
+        //     H4_BTN.addEventListener('click', function(){
+        //         H4_arrow.classList.toggle('active')
+        //         H4_sub.classList.toggle('on')
+        //     })  
+        // }else if(winW <= 1024){
+        //     const NAV_BTN = document.querySelector('.n_btn')
+        //     const NAV = document.querySelector('header nav')
+
+        //     NAV_BTN.addEventListener('click', function(){
+        //         NAV.classList.add('open')
+        //     })
+
+        //     const X_bar = document.querySelector('header nav .x_bar')
+        //     X_bar.addEventListener('click', function(){
+        //         NAV.classList.remove('open')
+        //     })
+
+        //     H4_BTN.addEventListener('click', function(){
+        //         H4_arrow.classList.toggle('add')
+        //         H4_sub.classList.toggle('show')
+        //     }) 
+        // }
+
+
 
         //nav_li1   a태그가 아닌 높이 값으로 구현하기
         function NAV1() {
@@ -503,10 +543,6 @@
                 return false;
             })
         }
-
-   
-       
-
 
 
         //제품소개 카운터
@@ -562,7 +598,7 @@
             document.querySelector('body').style.overflow = 'auto'
         })
 
-    
+
         //이메일 : 유효성 체크
         function email_check() {
             let Email = document.getElementById('Eamil').value;
@@ -603,7 +639,7 @@
             for (let i = 0; i < tog_CONT.length; i++) {
                 tog_CONT[i].setAttribute('aria-hidden', 'flase');
             };
-            if(contGET == 'flase'){
+            if (contGET == 'flase') {
                 tog__contON.setAttribute('aria-hidden', 'true');
             }
             let cont_check = contGET == 'true';
@@ -613,11 +649,11 @@
             for (let j = 0; j < Plus.length; j++) {
                 Plus[j].setAttribute('aria-expanded', 'flase');
             };
-            if(tog__contON.getAttribute("aria-hidden", 'true')){
+            if (tog__contON.getAttribute("aria-hidden", 'true')) {
                 Plus__ON.setAttribute('aria-expanded', 'true');
             }
             let Plue_check = Plus__GET == 'true';
-            if(Plue_check){
+            if (Plue_check) {
                 Plus__ON.setAttribute('aria-expanded', 'flase');
             }
         }
